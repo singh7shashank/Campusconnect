@@ -22,12 +22,12 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class signup extends AppCompatActivity {
-    Spinner spingender, spinuniversity, spinschool, spinsemester;
-    EditText dateofbirth, emailadd, passwd, passwordcnf, firstname, lastname;
-    CheckBox termscondition;
-    Button signupbtn;
-    TextView emailinvali, passwdinvalid, passwdcnfinvalid;
-    TextView fnamerq,lnamerq,sexrq,dorq,unirq,schrq,csrq;
+   private  Spinner spingender, spinuniversity, spinschool, spinsemester;
+    private  EditText dateofbirth, emailadd, passwd, passwordcnf, firstname, lastname;
+    private  CheckBox termscondition;
+    private Button signupbtn;
+    private  TextView emailinvali, passwdinvalid, passwdcnfinvalid;
+    private TextView fnamerq,lnamerq,sexrq,dorq,unirq,schrq,csrq;
     int year, month, day;
     int pss=1;//passwordvald since boolean didn't work
 
@@ -186,7 +186,7 @@ public class signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                emailvalidation(emailadd);
+             boolean emailval=   emailvalidation(emailadd);
                 passwordvalidation(passwd, passwordcnf);
                 fnamevalidatio(firstname);
                 lnamevalidatio(lastname);

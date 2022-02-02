@@ -28,7 +28,7 @@ public class logint extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         int ids=v.getId();
         if(ids==R.id.button4){
-            Intent intent=new Intent(logint.this,herr.class);
+            Intent intent=new Intent(logint.this,tsignup.class);
             startActivity(intent);
         }
 
