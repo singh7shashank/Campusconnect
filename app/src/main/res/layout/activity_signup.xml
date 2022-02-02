@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".signup">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="414dp"
+            android:layout_height="222dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/shapes3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/firsttop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="47dp"
+            android:text="First Name"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/firstname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:ems="10"
+            android:hint="First name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/lastnametop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="47dp"
+            android:text="Last Name"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/lastname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="53dp"
+            android:background="@drawable/customlayout"
+            android:ems="10"
+            android:hint="Last name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            app:layout_constraintBottom_toTopOf="@+id/sex"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+
+        <TextView
+            android:id="@+id/sextop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="47dp"
+            android:text="Sex"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/sex"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+        <Spinner
+            android:id="@+id/sex"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+        <TextView
+            android:id="@+id/doctop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="47dp"
+            android:text="Date Of Birth"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/dateofbirth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sex" />
+
+        <EditText
+            android:id="@+id/dateofbirth"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/customlayout"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="Date Of Birth"
+            android:inputType="textPersonName"
+            android:paddingStart="25dp"
+            android:textColorHint="#000"
+            app:layout_constraintBottom_toTopOf="@+id/university"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sex" />
+
+        <TextView
+            android:id="@+id/universitytop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="47dp"
+            android:text="University"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/university"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateofbirth" />
+
+        <Spinner
+            android:id="@+id/university"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateofbirth" />
+
+        <TextView
+            android:id="@+id/schooltop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="47dp"
+            android:text="School"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/school"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/university" />
+
+        <Spinner
+            android:id="@+id/school"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/customlayout"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/university" />
+
+        <TextView
+            android:id="@+id/currentsemtop"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="47dp"
+            android:text="Current Semester"
+            android:textColor="#696969"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/semester"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school" />
+
+        <Spinner
+            android:id="@+id/semester"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:paddingStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <EditText
+            android:id="@+id/emailaddress"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:ems="10"
+            android:hint="E-mail"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/semester" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:ems="10"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailaddress" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/customlayout"
+            android:ems="10"
+            android:hint="Confirm-Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="89dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="68dp"
+            android:text="n"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupbt" />
+
+        <CheckBox
+            android:id="@+id/termscondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="60dp"
+            android:checked="false"
+            android:text="I Agree to terms and conditions "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.314"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbt"
+            android:layout_width="185dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/shapes"
+            android:text="Sign Up"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termscondition"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="21dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailaddress" />
+
+        <TextView
+            android:id="@+id/passwdinvalid"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="22dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/confirmpassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <TextView
+            android:id="@+id/passwdcnfinvald"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="21dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/termscondition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmpassword"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/fnamerq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/firstname"
+            app:layout_constraintEnd_toEndOf="@+id/firsttop"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="@+id/firsttop"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/lnamerq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/lastname"
+            app:layout_constraintEnd_toEndOf="@+id/lastnametop"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="@+id/lastnametop"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sexrq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="23dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/sex"
+            app:layout_constraintEnd_toEndOf="@+id/sextop"
+            app:layout_constraintHorizontal_bias="0.218"
+            app:layout_constraintStart_toStartOf="@+id/sextop"
+            app:layout_constraintTop_toBottomOf="@+id/lastname"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/dorq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/dateofbirth"
+            app:layout_constraintEnd_toEndOf="@+id/doctop"
+            app:layout_constraintHorizontal_bias="0.687"
+            app:layout_constraintStart_toStartOf="@+id/doctop"
+            app:layout_constraintTop_toBottomOf="@+id/sex"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/unirq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/university"
+            app:layout_constraintEnd_toEndOf="@+id/universitytop"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/universitytop"
+            app:layout_constraintTop_toBottomOf="@+id/dateofbirth"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/schrq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:text=" "
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/school"
+            app:layout_constraintEnd_toEndOf="@+id/schooltop"
+            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintStart_toStartOf="@+id/schooltop"
+            app:layout_constraintTop_toBottomOf="@+id/university"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/csrq"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="1dp"
+            android:text=" "
+
+            android:textColor="#CA0101"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/semester"
+            app:layout_constraintEnd_toEndOf="@+id/currentsemtop"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="@+id/currentsemtop"
+            app:layout_constraintTop_toBottomOf="@+id/school"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

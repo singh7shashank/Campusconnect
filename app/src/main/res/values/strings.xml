@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Collegesapp</string>
+    <string-array name="sex">
+        <item>sex</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="university">
+        <item>University</item>
+        <item>Sharad University</item>
+        <item>Amity University</item>
+    </string-array>
+
+
+    <string-array name="school">
+        <item>School</item>
+        <item>SET</item>
+        <item>SBS</item>
+        <item>SAP</item>
+        <item>SOL</item>
+        <item>SAHS</item>
+        <item>SNSR</item>
+        <item>SOE</item>
+        <item>SMFE</item>
+    </string-array>
+    <string-array name="semester">
+        <item>Current Semester</item>
+        <item>First Semester</item>
+        <item>Second Semester</item>
+        <item>Third Semester</item>
+        <item>Fourth Semester</item>
+        <item>Fifth Semester</item>
+        <item>Sixth Semester</item>
+        <item>Seventh Semester</item>
+        <item>Eigth Semester</item>
+
+
+    </string-array>
+</resources>
